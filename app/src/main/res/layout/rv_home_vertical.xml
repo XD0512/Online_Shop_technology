@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view_rv"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:background="@drawable/background"
+        app:cardCornerRadius="30sp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="24sp"
+            android:layout_height="24sp"
+            android:src="@drawable/favorite"
+            android:layout_margin="25dp"
+            android:layout_alignParentRight="true"/>
+
+
+            <ImageView
+                android:id="@+id/img_girl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/girls" />
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/tv_snake"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/card_view_rv"
+        android:layout_margin="10dp"
+        android:text="Snake Leather Bag"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/iv_star"
+        android:layout_width="24sp"
+        android:layout_height="24sp"
+        android:layout_below="@id/tv_snake"
+        android:layout_margin="10dp"
+        android:src="@drawable/star" />
+
+    <TextView
+        android:id="@+id/tv_45"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_snake"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/iv_star"
+        android:text="4.5  |"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_snake"
+        android:background="@drawable/background"
+        android:text="8.374 sold"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/tv_45"
+        android:layout_marginLeft="5dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:text="$445.00"
+        android:textColor="@color/black"
+        android:layout_below="@+id/iv_star"
+        android:layout_margin="10dp"/>
+
+
+</RelativeLayout>
