@@ -1,91 +1,94 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="180dp"
-    android:padding="15dp"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    android:layout_height="wrap_content"
+    android:padding="15dp">
 
     <androidx.cardview.widget.CardView
         android:id="@+id/img_cart_image"
         android:layout_width="170dp"
+        android:layout_height="wrap_content"
         android:layout_margin="5dp"
-        android:layout_height="match_parent"
-        app:cardCornerRadius="20dp"
         android:backgroundTint="#AAA5A5"
-        >
+        app:cardCornerRadius="20dp">
+
         <ImageView
+            android:id="@+id/iv_girl"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/girls"
-            android:layout_gravity="center"/>
+            android:layout_gravity="center"
+            android:src="@drawable/girls" />
     </androidx.cardview.widget.CardView>
 
     <TextView
         android:id="@+id/tv_werallo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Werolla Cardigans"
-        android:textStyle="bold"
-        android:textColor="@color/black"
-        android:layout_marginTop="15dp"
         android:layout_marginLeft="5dp"
+        android:layout_marginTop="15dp"
         android:layout_toRightOf="@+id/img_cart_image"
-        android:textSize="18sp"/>
+        android:text="Werolla Cardigans"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
     <ImageView
         android:layout_width="24sp"
         android:layout_height="24sp"
-        android:src="@drawable/trashs"
+        android:layout_alignParentRight="true"
         android:layout_marginTop="15dp"
-        android:layout_alignParentRight="true"/>
+        android:src="@drawable/trashs" />
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cart_circle"
         android:layout_width="24sp"
         android:layout_height="24sp"
-        android:backgroundTint="#7A7777"
-        app:cardCornerRadius="30sp"
+        android:layout_below="@id/tv_werallo"
         android:layout_marginTop="15dp"
         android:layout_toRightOf="@+id/img_cart_image"
-        android:layout_below="@id/tv_werallo" />
+        android:backgroundTint="#7A7777"
+        app:cardCornerRadius="30sp" />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Color  |  Size = M"
-        android:layout_toRightOf="@id/cart_circle"
         android:layout_below="@id/tv_werallo"
+        android:layout_marginLeft="15dp"
         android:layout_marginTop="15dp"
-        android:layout_marginLeft="15dp"/>
+        android:layout_toRightOf="@id/cart_circle"
+        android:text="Color  |  Size = M" />
 
     <TextView
         android:id="@+id/tv_385"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="20dp"
+        android:layout_toRightOf="@id/img_cart_image"
         android:text="$385.00"
         android:textColor="@color/black"
-        android:textStyle="bold"
         android:textSize="18sp"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="20dp"
-        android:layout_marginRight="15dp"
-        android:layout_toRightOf="@id/img_cart_image"/>
+        android:textStyle="bold" />
 
     <androidx.cardview.widget.CardView
         android:layout_width="70dp"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
         android:layout_marginEnd="20dp"
         android:layout_marginBottom="20dp"
         android:backgroundTint="#BAB7B7"
         app:cardCornerRadius="30dp">
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:textColor="@color/black"
-            android:text="-    1    +"/>
+            android:text="-    1    +"
+            android:textColor="@color/black" />
     </androidx.cardview.widget.CardView>
-
 
 
 </RelativeLayout>

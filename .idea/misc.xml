@@ -4,23 +4,26 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/Acer/AndroidStudioProjects/OnlineBook/app/src/main/res/drawable/background.xml" value="0.20833333333333334" />
+        <entry key="..\:/Users/Acer/AndroidStudioProjects/OnlineBook/app/src/main/res/drawable/bc.xml" value="0.20833333333333334" />
         <entry key="..\:/Users/Acer/AndroidStudioProjects/OnlineBook/app/src/main/res/drawable/ic_baseline_favorite_border_24.xml" value="0.20833333333333334" />
+        <entry key="..\:/Users/Acer/AndroidStudioProjects/OnlineBook/app/src/main/res/drawable/ic_baseline_group_24.xml" value="0.20833333333333334" />
         <entry key="..\:/Users/Acer/AndroidStudioProjects/OnlineBook/app/src/main/res/drawable/ic_baseline_notifications_24.xml" value="0.20833333333333334" />
         <entry key="..\:/Users/Acer/AndroidStudioProjects/OnlineBook/app/src/main/res/drawable/ic_launcher_background.xml" value="0.20833333333333334" />
         <entry key="..\:/Users/Acer/AndroidStudioProjects/OnlineBook/app/src/main/res/drawable/item.xml" value="0.20833333333333334" />
         <entry key="..\:/Users/Acer/AndroidStudioProjects/OnlineBook/app/src/main/res/drawable/orders_ongoing.xml" value="0.20833333333333334" />
         <entry key="..\:/Users/Acer/AndroidStudioProjects/OnlineBook/app/src/main/res/layout/activity_main.xml" value="0.2" />
         <entry key="..\:/Users/Acer/AndroidStudioProjects/OnlineBook/app/src/main/res/layout/background.xml" value="0.1921875" />
-        <entry key="..\:/Users/Acer/AndroidStudioProjects/OnlineBook/app/src/main/res/layout/fragment_cart.xml" value="0.1921875" />
-        <entry key="..\:/Users/Acer/AndroidStudioProjects/OnlineBook/app/src/main/res/layout/fragment_home.xml" value="0.1" />
+        <entry key="..\:/Users/Acer/AndroidStudioProjects/OnlineBook/app/src/main/res/layout/fragment_cart.xml" value="0.16" />
+        <entry key="..\:/Users/Acer/AndroidStudioProjects/OnlineBook/app/src/main/res/layout/fragment_completed.xml" value="0.1921875" />
+        <entry key="..\:/Users/Acer/AndroidStudioProjects/OnlineBook/app/src/main/res/layout/fragment_home.xml" value="0.18" />
         <entry key="..\:/Users/Acer/AndroidStudioProjects/OnlineBook/app/src/main/res/layout/fragment_ongoing.xml" value="0.18923076923076923" />
         <entry key="..\:/Users/Acer/AndroidStudioProjects/OnlineBook/app/src/main/res/layout/fragment_order1.xml" value="0.1921875" />
         <entry key="..\:/Users/Acer/AndroidStudioProjects/OnlineBook/app/src/main/res/layout/fragment_order2.xml" value="0.1921875" />
         <entry key="..\:/Users/Acer/AndroidStudioProjects/OnlineBook/app/src/main/res/layout/fragment_orders.xml" value="0.1921875" />
-        <entry key="..\:/Users/Acer/AndroidStudioProjects/OnlineBook/app/src/main/res/layout/fragment_profile.xml" value="0.2" />
+        <entry key="..\:/Users/Acer/AndroidStudioProjects/OnlineBook/app/src/main/res/layout/fragment_profile.xml" value="0.1" />
         <entry key="..\:/Users/Acer/AndroidStudioProjects/OnlineBook/app/src/main/res/layout/fragment_wallet.xml" value="0.1921875" />
         <entry key="..\:/Users/Acer/AndroidStudioProjects/OnlineBook/app/src/main/res/layout/item_cart.xml" value="0.25" />
-        <entry key="..\:/Users/Acer/AndroidStudioProjects/OnlineBook/app/src/main/res/layout/rv_home_vertical.xml" value="0.1921875" />
+        <entry key="..\:/Users/Acer/AndroidStudioProjects/OnlineBook/app/src/main/res/layout/rv_home_vertical.xml" value="0.25" />
         <entry key="..\:/Users/Acer/AndroidStudioProjects/OnlineBook/app/src/main/res/menu/bottom_menu.xml" value="0.1921875" />
       </map>
     </option>
