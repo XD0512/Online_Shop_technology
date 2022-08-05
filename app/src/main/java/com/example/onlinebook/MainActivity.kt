@@ -2,18 +2,18 @@ package com.example.onlinebook
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Toast
 import androidx.fragment.app.Fragment
 import com.example.onlinebook.databinding.ActivityMainBinding
 import com.example.onlinebook.fragment.*
 
 class MainActivity : AppCompatActivity() {
+
     lateinit var binding: ActivityMainBinding
 
     var homeFragment = HomeFragment.newInstance()
     var cartFragment= CartFragment.newInstance()
     var ordersFragment= OrdersFragment.newInstance()
-    var walletFragment= WalletFragment.newInstance()
+    var favoriteFragment= FavoriteFragment.newInstance()
     var profileFragment= ProfileFragment.newInstance()
 
     var activeFragment: Fragment = homeFragment
@@ -36,8 +36,8 @@ class MainActivity : AppCompatActivity() {
         ).hide(ordersFragment).commit()
 
         supportFragmentManager.beginTransaction().add(
-            R.id.container,walletFragment,walletFragment.tag
-        ).hide(walletFragment).commit()
+            R.id.container,favoriteFragment,favoriteFragment.tag
+        ).hide(favoriteFragment).commit()
 
         supportFragmentManager.beginTransaction().add(
             R.id.container,profileFragment,profileFragment.tag
@@ -67,8 +67,8 @@ class MainActivity : AppCompatActivity() {
             }else if (it.itemId == R.id.wallet){
                 supportFragmentManager.beginTransaction().hide(
                     activeFragment
-                ).show(walletFragment).commit()
-                activeFragment = walletFragment
+                ).show(favoriteFragment).commit()
+                activeFragment = favoriteFragment
             }else if (it.itemId == R.id.profile){
                 supportFragmentManager.beginTransaction().hide(
                     activeFragment

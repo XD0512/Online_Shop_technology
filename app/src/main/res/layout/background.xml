@@ -5,7 +5,7 @@
     android:layout_margin="5dp"
     android:id="@+id/cardView"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    app:cardCornerRadius="20dp"
+    app:cardCornerRadius="25dp"
     android:elevation="2dp">
 
     <TextView

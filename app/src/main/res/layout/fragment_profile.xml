@@ -5,17 +5,18 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:layout_margin="15dp"
+
     tools:context=".fragment.ProfileFragment">
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="?actionBarSize">
+        android:layout_height="?actionBarSize"
+        >
 
         <ImageView
             android:id="@+id/img_load"
-            android:layout_width="36sp"
-            android:layout_height="36sp"
+            android:layout_width="18sp"
+            android:layout_height="18sp"
             android:layout_centerVertical="true"
             android:layout_gravity="center"
             android:layout_margin="15dp"
@@ -34,8 +35,8 @@
             android:textStyle="bold" />
 
         <ImageView
-            android:layout_width="36dp"
-            android:layout_height="36sp"
+            android:layout_width="24dp"
+            android:layout_height="24sp"
             android:layout_alignParentEnd="true"
             android:layout_centerVertical="true"
             android:layout_marginRight="15dp"
@@ -325,7 +326,7 @@
         <ImageView
             android:layout_width="24sp"
             android:layout_height="24sp"
-            android:src="@drawable/ic_baseline_groups_24"/>
+            android:src="@drawable/ic_baseline_group_24"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

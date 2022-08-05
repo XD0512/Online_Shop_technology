@@ -2,9 +2,7 @@ package com.example.onlinebook.viewModel
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.example.onlinebook.adapter.PraductAdapter
 import com.example.onlinebook.api.repository.ShopRepository
-import com.example.onlinebook.model.CartModel
 import com.example.onlinebook.model.CategoryModel
 import com.example.onlinebook.model.OffersModel
 import com.example.onlinebook.model.ProductModel
@@ -33,5 +31,8 @@ class MainViewModel : ViewModel() {
     }
     fun getCategoryById(id:Int){
         repository.getCategoryById(id,error,progress,productData)
+    }
+    fun getProductsByIds(ids: List<Int>){
+        repository.getProductsByIds(ids,error,progress,productData)
     }
 }

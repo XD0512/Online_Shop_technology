@@ -13,6 +13,7 @@
         android:layout_height="match_parent">
 
         <androidx.core.widget.NestedScrollView
+            android:id="@+id/nestScroll"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
@@ -31,7 +32,7 @@
                         android:id="@+id/relativeLayout"
                         android:layout_width="match_parent"
                         android:layout_height="?actionBarSize"
-                        android:layout_marginTop="10dp"
+                        android:layout_margin="10dp"
                         android:orientation="horizontal"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
@@ -41,7 +42,7 @@
                             android:id="@+id/prof"
                             android:layout_width="60dp"
                             android:layout_height="60dp"
-                            android:src="@drawable/girls" />
+                            android:src="@drawable/prodile_icon" />
 
                         <TextView
                             android:id="@+id/tv_morning"
@@ -73,20 +74,20 @@
 
 
                         <ImageView
-                            android:id="@+id/profle"
+                            android:id="@+id/favorite_home"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_alignParentRight="true"
                             android:layout_centerVertical="true"
-                            android:padding="10dp"
                             android:src="@drawable/ic_baseline_favorite_border_24"
                             app:tint="@color/black" />
 
                         <ImageView
+                            android:id="@+id/note"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_centerVertical="true"
-                            android:layout_toLeftOf="@+id/profle"
+                            android:layout_toLeftOf="@+id/favorite_home"
                             android:padding="10dp"
                             android:src="@drawable/ic_baseline_notifications_none_24"
                             app:tint="@color/black" />
@@ -172,13 +173,14 @@
                         app:layout_constraintTop_toBottomOf="@+id/cardView2">
 
                         <LinearLayout
+                            android:id="@+id/clothes"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
-
                             android:orientation="vertical">
 
                             <ImageView
+
                                 android:layout_width="50dp"
                                 android:layout_height="50dp"
                                 android:src="@drawable/t_shirt"
@@ -200,6 +202,7 @@
                             android:layout_weight="1" />
 
                         <LinearLayout
+                            android:id="@+id/shoes"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:gravity="center"
@@ -228,9 +231,9 @@
                             android:layout_weight="1" />
 
                         <LinearLayout
+                            android:id="@+id/bags"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-
                             android:gravity="center"
                             android:orientation="vertical">
 
@@ -256,6 +259,7 @@
                             android:layout_weight="1" />
 
                         <LinearLayout
+                            android:id="@+id/electronic"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:gravity="center"
@@ -289,12 +293,14 @@
                         app:layout_constraintTop_toBottomOf="@+id/linear2">
 
                         <LinearLayout
+                            android:id="@+id/watch"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:gravity="center"
                             android:orientation="vertical">
 
                             <ImageView
+
                                 android:layout_width="50dp"
                                 android:layout_height="50dp"
                                 android:background="@drawable/background"
@@ -316,6 +322,7 @@
                             android:layout_weight="1" />
 
                         <LinearLayout
+                            android:id="@+id/jeweraly"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:gravity="center"
@@ -343,6 +350,7 @@
                             android:layout_weight="1" />
 
                         <LinearLayout
+                            android:id="@+id/kitchen"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:gravity="center"
@@ -370,6 +378,7 @@
                             android:layout_weight="1" />
 
                         <LinearLayout
+                            android:id="@+id/toys"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:gravity="center"
@@ -419,6 +428,15 @@
                             android:textSize="18sp"
                             android:textStyle="bold" />
                     </RelativeLayout>
+
+                    <FrameLayout
+                        android:id="@+id/fl_main"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        tools:layout_editor_absoluteX="0dp"
+                        tools:layout_editor_absoluteY="4dp">
+
+                    </FrameLayout>
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
                 <androidx.recyclerview.widget.RecyclerView
@@ -453,6 +471,8 @@
             </LinearLayout>
 
         </androidx.core.widget.NestedScrollView>
+
+
     </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
 
 </FrameLayout>

@@ -28,26 +28,7 @@ class CategoriesAdapter(val item: List<CategoryModel>, val callBack: CategoryCal
     override fun onBindViewHolder(holder: ItemHolder, position: Int) {
         val items = item[position]
         holder.binding.name.text = items.title
-/*
-        holder.itemView.setOnClickListener {
-            item.forEach {
-                it.checked = false
-            }
-            callBack.onClickItem(items)
-            items.checked = true
 
-            notifyDataSetChanged()
-        }
-
-        if (items.checked) {
-            holder.binding.cardView.setCardBackgroundColor(ContextCompat.getColor(holder.itemView.context,
-                R.color.black))
-            holder.binding.name.setTextColor(Color.WHITE)
-        }else{
-            holder.binding.cardView.setCardBackgroundColor(ContextCompat.getColor(holder.itemView.context,
-                R.color.white))
-            holder.binding.name.setTextColor(Color.BLACK)
-        }*/
         holder.itemView.setOnClickListener {
             item.forEach {
                 it.checked = false

@@ -1,13 +1,12 @@
 package com.example.onlinebook.api
 
-import com.example.onlinebook.model.CartModel
-import com.example.onlinebook.model.CategoryModel
-import com.example.onlinebook.model.OffersModel
-import com.example.onlinebook.model.ProductModel
+import com.example.onlinebook.model.*
 import com.example.onlinebook.model.base.BaseResponce
 import io.reactivex.Observable
 import retrofit2.Call
+import retrofit2.http.Body
 import retrofit2.http.GET
+import retrofit2.http.POST
 import retrofit2.http.Path
 
 interface Api {
@@ -25,6 +24,7 @@ interface Api {
     fun getCategoryById(@Path("category_id") category_id: Int): Observable<BaseResponce<List<ProductModel>>>
 
 
-/*      @GET("api/get_top_products")
-      fun getCart():Call<BaseResponce<List<CartModel>>>*/
+      @POST("api/get_products_by_ids")
+      fun getCart(@Body request:GetProductByIdsRequest):Observable<BaseResponce<List<ProductModel>>>
+
 }

@@ -1,9 +1,13 @@
 package com.example.onlinebook.adapter
 
+import android.content.Intent
+import android.graphics.Color
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
+import com.example.onlinebook.activity.ProductDetailsActivity
 import com.example.onlinebook.R
 import com.example.onlinebook.databinding.RvHomeVerticalBinding
 import com.example.onlinebook.model.ProductModel
@@ -27,6 +31,13 @@ class PraductAdapter(val item: List<ProductModel>) :
         holder.binding.price.text = "${items.price} so'm"
 
         Glide.with(holder.itemView.context).load(Constant.IMAGE+items.image).placeholder(R.drawable.girls).into(holder.binding.imgGirl)
+
+        holder.itemView.setOnClickListener{
+            val intent = Intent(holder.itemView.context, ProductDetailsActivity::class.java)
+            intent.putExtra("extra_data",items)
+
+            holder.itemView.context.startActivity(intent)
+        }
     }
 
     override fun getItemCount(): Int {
